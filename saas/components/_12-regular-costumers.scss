@@ -1,0 +1,80 @@
+.list-regular-costumers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+  &__item {
+    margin-right: 30px;
+  }
+  
+  &__item:last-child {
+    margin-right: 0;
+  }
+  }
+  
+  .logo-clients-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    -webkit-transition: all $transition;
+    transition: all $transition;
+  
+    &:hover,
+    &:focus {
+    color: $accent-blue-color;
+    border: solid $accent-blue-color 1px;
+  }
+    
+  &:hover .icon-logo {
+    fill: $accent-blue-color;
+    -webkit-transition: all $transition;
+    transition: all $transition;
+  }
+  }
+  
+  
+  .icon-logo-1 {
+    width: 45px;
+  }
+  
+  .icon-logo-2 {
+    width: 40px;
+  }
+  
+  .icon-logo-3 {
+    width: 41px;
+  }
+  
+  .icon-logo-4 {
+    width: 80px;
+  }
+  
+  .icon-logo-5 {
+    width: 59px;
+  }
+  
+  .icon-logo-6 {
+    width: 88.5px;
+  }
+  
+  .icon-logo {
+    fill: currentColor;
+  }
+  

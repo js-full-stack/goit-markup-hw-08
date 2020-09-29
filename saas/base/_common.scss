@@ -1,0 +1,99 @@
+body {
+    font-family: $font-style-primary;
+    background-color: var(--accent-white-color);
+    letter-spacing: $letter;
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .container {
+    // width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+   @media screen and (min-width: 480px) {
+    .container {
+     width: 480px;
+    }
+    }
+
+   @media screen and (min-width: 768px) {
+      .container {
+       width: 768px;
+      }
+      }
+
+   @media screen and (min-width: 1200px) {
+        .container {
+         width: 1200px;
+        }
+        }
+
+  //   @media screen and (min-width: 480px) and (max-width: 768px) {
+  //     .container {
+  //       background-color: red;
+  //     }
+  //     }
+  
+  .header-section {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    color: $header-text-color;
+  }
+  
+  .text {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    color: $primary-text-color;
+  }
+  
+  .white-text {
+    color: $accent-white-color;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .mg-zero {
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+
+  .hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect 0 0 0 0;
+    overflow: hidden;
+  }

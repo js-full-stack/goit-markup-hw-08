@@ -1,0 +1,36 @@
+
+.our-team {
+    display: flex;
+    text-align: center;
+    
+    &__item {
+      width: calc((100% - 30px * 3) / 4);
+      margin-right: 30px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  
+    &__item:last-child {
+      margin-right: 0px;
+    }
+  }
+  
+  .info-team {
+    background-color: $accent-white-color;
+  
+    &__name {
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-top: 30px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--header-text-color);
+    }
+    
+      &__duties {
+      margin-top: 0;
+      margin-bottom: 16px;
+      line-height: 1.2;
+      color: var(--primary-text-color);
+    }
+  }

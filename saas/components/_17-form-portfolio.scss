@@ -1,0 +1,55 @@
+.footer-flex-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .action-mail {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: $secondary-bck-color;
+    color: $accent-rgba-color;
+  }
+  
+  .action-mail::-webkit-input-placeholder {
+    color: $accent-rgba-color;
+  }
+  
+  .action-mail:-ms-input-placeholder {
+    color: $accent-rgba-color;
+  }
+  
+  .action-mail::-ms-input-placeholder {
+    color: $accent-rgba-color;
+  }
+  
+  .action-mail::placeholder {
+    color: $accent-rgba-color;
+  }
+  
+  .icon-telegramm {
+    fill:  $accent-white-color;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  
+  .btn-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 28px;
+    padding-right: 29px;
+  }

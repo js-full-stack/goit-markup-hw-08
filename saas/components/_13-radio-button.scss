@@ -1,0 +1,39 @@
+.radio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 50px;
+
+  
+&__item:not(:first-child) {
+  margin-left: 8px;
+}
+}
+
+.btn {
+  padding: 6px 22px;
+  border: none;
+  min-width: 73px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: $letter;
+  color: $header-text-color;
+  background-color: var(--bck-section-white);
+  -webkit-transition: all $transition;
+  transition: all $transition;
+
+  &:hover,
+  &:focus {
+  color:  $accent-white-color;
+  background-color: $accent-blue-color;
+}
+} 
