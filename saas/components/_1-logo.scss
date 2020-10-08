@@ -1,13 +1,21 @@
 .logo {
-    margin-right: 93px;
-    font-family: $font-style-logo;
-    font-size: 26px;
-    line-height: 1.2;
-    color: $accent-black-color;
+  padding: 16px 0;
+  font-family: $font-style-logo;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $accent-black-color;
 
-    .accent-color {
-        color: $accent-blue-color;
-      }
+  @include for-size(tablet) {
+    margin-right: 88px;
+
+    @include for-size(desktop) {
+      margin-right: 93px;
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
 }
-  
- 
+
+.accent-color {
+  color: $accent-blue-color;
+}

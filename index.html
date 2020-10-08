@@ -15,26 +15,48 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Логотип и навигация -->
     <header class="nav-and-contacts">
       <div class="container flex-header">
-        <nav class="flex-nav">
-          <a class="link logo" href="./index.html">
-            <span class="accent-color">Web</span>Studio</a
+        <a class="link logo" href="./index.html">
+          <span class="accent-color">Web</span>Studio</a
+        >
+        <button
+          class="btn-menu"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-burger-mobile"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-close-mobile"
+            ></use>
+          </svg>
+        </button>
+        <nav class="flex-nav" data-menu>
           <ul class="menu-nav list text">
             <li class="menu-nav__item">
-              <a class="menu-nav__link current link" href="./index.html">Студия</a>
+              <a class="menu-nav__link current link" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="./portfolio.html">Портфолио</a>
+              <a class="menu-nav__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="menu-nav__item"><a class="menu-nav__link link" href="">Контакты</a></li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="">Контакты</a>
+            </li>
           </ul>
-        </nav>
-
-        <!-- Контакты -->
-        <address>
           <ul class="list text contacts">
             <li class="contacts__item">
               <a class="contacts__link link" href="mailto:info@devstudio.com"
@@ -53,12 +75,11 @@
               >
             </li>
           </ul>
-        </address>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <!-- Основное содержимое - секция герой -->
+    <!--<main>
       <section class="wrap-hero">
         <div class="container banner">
           <h1 class="banner__title">Эффективные решения для вашего бизнеса</h1>
@@ -66,8 +87,7 @@
         </div>
       </section>
 
-      <!-- 2-я секция - список преимуществ -->
-      <section class="wrap-why-we">
+    <section class="wrap-why-we">
         <div class="container">
           <h2 class="hidden-title">Наши преимущества</h2>
           <ul class="list why-we">
@@ -103,7 +123,6 @@
         </div>
       </section>
 
-      <!-- 3-я секция - чем мы занимаемся -->
       <section class="wrap-about-us">
         <div class="container">
           <h2 class="header-section">Чем мы занимаемся</h2>
@@ -115,9 +134,7 @@
                 width="370"
               />
               <div class="overlay">
-                <p class="overlay__caption mg-zero">
-                  Десктопные приложения
-                </p>
+                <p class="overlay__caption mg-zero">Десктопные приложения</p>
               </div>
             </li>
             <li class="about-us__item">
@@ -127,9 +144,7 @@
                 width="370"
               />
               <div class="overlay">
-                <p class="overlay__caption mg-zero">
-                  Мобильные приложения
-                </p>
+                <p class="overlay__caption mg-zero">Мобильные приложения</p>
               </div>
             </li>
             <li class="about-us__item">
@@ -139,16 +154,13 @@
                 width="370"
               />
               <div class="overlay">
-                <p class="overlay__caption mg-zero">
-                  Дизайнерские решения
-                </p>
+                <p class="overlay__caption mg-zero">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- 4-я секция - наша команда -->
       <section class="wrap-our-team">
         <div class="container">
           <h2 class="header-section">Наша команда</h2>
@@ -162,9 +174,9 @@
               <div class="info-team">
                 <h3 class="info-team__name">Игорь Демьяненко</h3>
                 <p class="info-team__duties">Product Designer</p>
-                <ul class="list social">  
+                <ul class="list social">
                   <li class="social__item">
-                    <a class="link social__link " href="www.instagram.com">
+                    <a class="link social__link" href="www.instagram.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -173,14 +185,14 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="https://twitter.com">
+                    <a class="link social__link" href="https://twitter.com">
                       <svg class="social__icon">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="www.facebook.com">
+                    <a class="link social__link" href="www.facebook.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -189,7 +201,7 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="ru.linkedin.com">
+                    <a class="link social__link" href="ru.linkedin.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -212,7 +224,7 @@
                 <p class="info-team__duties">Frontend Developer</p>
                 <ul class="list social">
                   <li class="social__item">
-                    <a class="link social__link " href="www.instagram.com">
+                    <a class="link social__link" href="www.instagram.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -221,14 +233,14 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="https://twitter.com">
+                    <a class="link social__link" href="https://twitter.com">
                       <svg class="social__icon">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="www.facebook.com">
+                    <a class="link social__link" href="www.facebook.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -237,7 +249,7 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="ru.linkedin.com">
+                    <a class="link social__link" href="ru.linkedin.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -259,7 +271,7 @@
                 <p class="info-team__duties">Marketing</p>
                 <ul class="list social">
                   <li class="social__item">
-                    <a class="link social__link " href="www.instagram.com">
+                    <a class="link social__link" href="www.instagram.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -268,14 +280,14 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="https://twitter.com">
+                    <a class="link social__link" href="https://twitter.com">
                       <svg class="social__icon">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="www.facebook.com">
+                    <a class="link social__link" href="www.facebook.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -284,7 +296,7 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="ru.linkedin.com">
+                    <a class="link social__link" href="ru.linkedin.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -306,7 +318,7 @@
                 <p class="info-team__duties">UI Designer</p>
                 <ul class="list social">
                   <li class="social__item">
-                    <a class="link social__link " href="www.instagram.com">
+                    <a class="link social__link" href="www.instagram.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -315,14 +327,14 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="https://twitter.com">
+                    <a class="link social__link" href="https://twitter.com">
                       <svg class="social__icon">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="www.facebook.com">
+                    <a class="link social__link" href="www.facebook.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -331,7 +343,7 @@
                     </a>
                   </li>
                   <li class="social__item">
-                    <a class="link social__link " href="ru.linkedin.com">
+                    <a class="link social__link" href="ru.linkedin.com">
                       <svg class="social__icon">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -345,8 +357,7 @@
           </ul>
         </div>
       </section>
-      
-     
+
       <section class="wrap-regular-costumers">
         <h2 class="header-section">Постоянные клиенты</h2>
         <ul class="list list-regular-costumers">
@@ -396,7 +407,7 @@
       </section>
     </main>
 
-    <!-- Футер -->
+  
     <footer class="wrap-footer">
       <div class="container footer-flexbox">
         <div class="footer-address">
@@ -423,7 +434,7 @@
           <ul class="list social">
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="www.instagram.com"
               >
                 <svg class="social__icon">
@@ -433,7 +444,7 @@
             </li>
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="https://twitter.com"
               >
                 <svg class="social__icon">
@@ -443,7 +454,7 @@
             </li>
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="www.facebook.com"
               >
                 <svg class="social__icon">
@@ -453,7 +464,7 @@
             </li>
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="ru.linkedin.com"
               >
                 <svg class="social__icon">
@@ -464,7 +475,7 @@
           </ul>
         </div>
 
-        <!-- Подпишитесь на рассылку-->
+        
         <form class="form-field js-speaker-form">
           <label for="action-mail">
             <b class="call-to-action">Подпишитесь на рассылку</b>
@@ -488,18 +499,18 @@
         </form>
       </div>
     </footer>
-    <!-- Бэкдроп и модальное окно -->
+    
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-windows">
         <button data-modal-close class="btn-modal-close">
           <svg class="icon-close">
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
-        </button>
+        </button> 
 
-        <!-- Форма в модальном окне -->
-
-        <form class="form js-speaker-form">
+    
+     <form class="form js-speaker-form">
           <b class="form__caption">Оставьте свои данные, мы вам перезвоним</b>
 
           <div class="form__field">
@@ -555,10 +566,11 @@
           <div class="button-submit">
             <button class="button" type="submit">Отправить</button>
           </div>
-        </form>
+        </form> 
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

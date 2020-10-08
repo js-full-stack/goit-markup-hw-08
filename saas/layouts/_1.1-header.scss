@@ -1,24 +1,75 @@
+header {
+  border-bottom: 1px solid lightgray;
+}
+
 .nav-and-contacts {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.02em;
-  }
-  
-  .flex-header,
-  .flex-nav,
-  .menu-nav,
-  .contacts {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.menu-nav {
+  @include for-size(tablet) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 84px;
 
-  .flex-nav {
-    margin-right: auto;
+    @include for-size(desktop) {
+      margin-right: 305px;
+    }
   }
+}
 
+.flex-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include for-size(tablet) {
+    height: 80px;
+  }
+}
+
+.flex-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    padding: 60px 0;
+    background-color: #ffffff;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contacts {
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+
+    @include for-size(tablet) {
+      font-size: 12px;
+    }
+  }
+}
+
+.flex-nav .contacts {
+  @include for-size(desktop) {
+    font-size: 14px;
+    display: flex;
+  }
+}
