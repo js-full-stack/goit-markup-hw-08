@@ -60,10 +60,22 @@ header {
 .contacts {
   @media screen and (max-width: 767px) {
     font-size: 18px;
+    line-height: 1.14;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     @include for-size(tablet) {
       font-size: 12px;
     }
+  }
+}
+
+.contacts__item:first-child {
+  @media screen and (max-width: 767px) {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 16px;
   }
 }
 

@@ -206,12 +206,29 @@ header {
 @media screen and (max-width: 767px) {
   .contacts {
     font-size: 18px;
+    line-height: 1.14;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 768px) {
   .contacts {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__item:first-child {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 16px;
   }
 }
 
