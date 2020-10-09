@@ -1,36 +1,82 @@
-
 .our-team {
+  text-align: center;
+
+  @media screen and (min-width: 767px) {
     display: flex;
-    text-align: center;
-    
-    &__item {
-      width: calc((100% - 30px * 3) / 4);
-      margin-right: 30px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-  
-    &__item:last-child {
-      margin-right: 0px;
+
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      flex-wrap: wrap;
     }
   }
-  
+
+  &__item {
+    padding-bottom: 24px;
+    background-color: $bck-section-white;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 30px) / 2);
+
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .our-team__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    color: #212121;
+
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+  }
+
   .info-team {
     background-color: $accent-white-color;
-  
+
     &__name {
       margin-top: 0;
       margin-bottom: 10px;
       padding-top: 30px;
       font-weight: 500;
-      line-height: 1.2;
+      font-size: 16px;
+      line-height: 1.13;
       color: var(--header-text-color);
     }
-    
-      &__duties {
+
+    &__duties {
       margin-top: 0;
       margin-bottom: 16px;
       line-height: 1.2;
       color: var(--primary-text-color);
     }
   }
+}

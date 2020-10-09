@@ -86,9 +86,11 @@
           <button data-modal-open class="button">Заказать услугу</button>
         </div>
       </section>
-<!--
+
+
+
     <section class="wrap-why-we">
-        <div class="container">
+      <div class="container">
           <h2 class="hidden-title">Наши преимущества</h2>
           <ul class="list why-we">
             <li class="why-we__item icon-antenna">
@@ -97,7 +99,7 @@
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
-            </li>
+           </li>
             <li class="why-we__item icon-clock">
               <h3 class="why-we__subtitle">Пунктуальность</h3>
               <p class="text mg-zero">
@@ -126,7 +128,7 @@
       <section class="wrap-about-us">
         <div class="container">
           <h2 class="header-section">Чем мы занимаемся</h2>
-          <ul class="list about-us">
+        <ul class="list about-us">
             <li class="about-us__item">
               <img
                 src="./images/1.jpg"
@@ -161,17 +163,23 @@
         </div>
       </section>
 
-      <section class="wrap-our-team">
+    <section class="wrap-our-team">
         <div class="container">
           <h2 class="header-section">Наша команда</h2>
-          <ul class="list our-team">
+           <ul class="list our-team">
             <li class="our-team__item">
-              <img
-                src="./images/igor-demianenko.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-              />
-              <div class="info-team">
+             
+              <picture>
+                <source srcset="./images/mobile/team-1@1x.jpg 1x, ./images/mobile/team-1@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <source srcset="./images/igor-demianenko.jpg 1x, ./images/desktop/desktop-team1@2x.jpg.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team_card_1-tab.jpg 1x, ./images/tablet/team_card_1-tab@2x.jpg" media="(min-width: 768px)">
+              
+                <img src="./images/team-1@1x.jpg" alt="Фото Игоря Демьяненко">
+              </picture>
+               
+              
+           <div class="info-team">
                 <h3 class="info-team__name">Игорь Демьяненко</h3>
                 <p class="info-team__duties">Product Designer</p>
                 <ul class="list social">
@@ -214,11 +222,15 @@
             </li>
 
             <li class="our-team__item">
-              <img
-                src="./images/olha-repina.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-              />
+
+              <picture>
+                <source srcset="./images/mobile/team-2@1x.jpg 1x, ./images/mobile/team-2@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <source srcset="./images/desktop/desktop-team2@1x.jpg.jpg 1x, ./images/desktop/desktop-team2@2x.jpg.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team_card_2-tab.jpg, ./images/team_card_2-tab@2x.jpg" media="(min-width: 768px)">
+                <img src="./images/desktop/desktop-team2@1x.jpg.jpg" alt="Фото Ольги Репиной">
+              </picture>
+              
               <div class="info-team">
                 <h3 class="info-team__name">Ольга Репина</h3>
                 <p class="info-team__duties">Frontend Developer</p>
@@ -259,13 +271,17 @@
                   </li>
                 </ul>
               </div>
-            </li>
+             </li>
             <li class="our-team__item">
-              <img
-                src="./images/nikolay-tarasov.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-              />
+
+              <picture>
+                <source srcset="./images/mobile/team-3@1x.jpg 1x, ./images/mobile/team-3@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/desktop/desktop-team3@1x.jpg.jpg 1x, ./images/desktop/desktop-team3@2x.jpg.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team_card_3-tab.jpg 1x, ./images/team_card_3-tab@2x.jpg" media="(min-width: 768px)">
+              
+                <img src="./images/desktop/desktop-team3@1x.jpg" alt="Фото Николая Тарасова">
+              </picture>
+              
               <div class="info-team">
                 <h3 class="info-team__name">Николай Тарасов</h3>
                 <p class="info-team__duties">Marketing</p>
@@ -307,12 +323,18 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team__item">
-              <img
-                src="./images/michail-ermakov.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-              />
+          <li class="our-team__item">
+            
+            <picture>
+              <source srcset="./images/mobile/team-4@1x.jpg 1x, ./images/mobile/team-4@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <source srcset="./images/desktop/desktop-team4@1x.jpg.jpg 1x, ./images/tablet/team_card_4@2x.jpg" media="(min-width: 1200px)">
+              <source srcset="./images/tablet/team_card_4-tab.jpg, ./images/desktop/desktop-team4@2x.jpg.jpg" media="(min-width: 768px)">
+            
+              <img src="./images/desktop/desktop-team4@1x.jpg.jpg" alt="Фото Михаила Ермакова">
+            </picture>
+              
+             
               <div class="info-team">
                 <h3 class="info-team__name">Михаил Ермаков</h3>
                 <p class="info-team__duties">UI Designer</p>
@@ -326,7 +348,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social__item">
+                 <li class="social__item">
                     <a class="link social__link" href="https://twitter.com">
                       <svg class="social__icon">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
@@ -358,7 +380,7 @@
         </div>
       </section>
 
-      <section class="wrap-regular-costumers">
+      <!--<section class="wrap-regular-costumers">
         <h2 class="header-section">Постоянные клиенты</h2>
         <ul class="list list-regular-costumers">
           <li class="list-regular-costumers__item">

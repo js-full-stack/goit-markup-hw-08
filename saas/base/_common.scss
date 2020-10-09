@@ -50,12 +50,17 @@ img {
 
 .header-section {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.17;
   text-align: center;
-  color: $header-text-color;
+  color: #212121;
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .text {

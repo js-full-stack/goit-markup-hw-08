@@ -1,15 +1,30 @@
-.wrap-why-we {
-    padding-top: 94px;
-  }
-  
-  .wrap-about-us,
-  .wrap-our-team,
-  .wrap-regular-costumers,
-  .wrap-my-project {
+.wrap-why-we,
+.wrap-our-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  .wrap-our-team {
-    background-color: #f5f4fa;
+}
+
+.wrap-about-us {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
+}
+
+.wrap-regular-costumers,
+.wrap-my-project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.wrap-our-team {
+  background-color: #f5f4fa;
+}
