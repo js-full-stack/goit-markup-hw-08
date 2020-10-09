@@ -15,49 +15,68 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Навигация и контакты -->
-   <!-- Логотип и навигация -->
-   <header class="nav-and-contacts">
-    <div class="container flex-header">
-      <nav class="flex-nav">
+    <header class="nav-and-contacts">
+      <div class="container flex-header">
         <a class="link logo" href="./index.html">
           <span class="accent-color">Web</span>Studio</a
         >
-        <ul class="menu-nav list text">
-          <li class="menu-nav__item">
-            <a class="menu-nav__link link" href="./index.html">Студия</a>
-          </li>
-          <li class="menu-nav__item">
-            <a class="menu-nav__link link current" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="menu-nav__item"><a class="menu-nav__link link" href="">Контакты</a></li>
-        </ul>
-      </nav>
+        <button
+          class="btn-menu"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-burger-mobile"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-close-mobile"
+            ></use>
+          </svg>
+        </button>
+        <nav class="flex-nav" data-menu>
+          <ul class="menu-nav list text">
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="list text contacts">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com"
+                ><svg class="contasts__icon--post">
+                  <use href="./images/symbol-defs.svg#icon-post"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111">
+                <svg class="contacts__icon--tel">
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <!-- Контакты -->
-      <address>
-        <ul class="list text contacts">
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com"
-              ><svg class="contasts__icon--post">
-                <use href="./images/symbol-defs.svg#icon-post"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon--tel">
-                <use href="./images/symbol-defs.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </div>
-  </header>
-    <!-- Виды работ  -->
     <main>
       <section class="wrap-my-project">
         <div class="container">
@@ -77,18 +96,22 @@
               <button class="btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <!-- Список портфолио -->
 
-          <ul class="list portfolio">
+    <ul class="list portfolio">
             <li class="portfolio__item">
               <a class="link" href="">
                 <div class="thumb">
-                  <img
-                    class="img-portfolio"
-                    src="./images/portfolio-1.jpg"
-                    alt="Страница сайта"
-                    width="370"
-                  />
+
+                  
+
+                  <picture>
+                    <source srcset="./images/mobile/project1-mob.jpg 1x, ./images/mobile/project1-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/project1.jpg 1x, ./images/project1@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/project1-tab.jpg 1x, ./images/tablet/project1-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                    <img src="./images/project1.jpg" alt="Веб-сайт технокряк">
+                    </picture>
+
+                                
                   <div class="overlay-portfolio">
                     <p class="text-overlay-portfolio mg-zero">
                       Технокряк это современная площадка распространения
@@ -99,7 +122,8 @@
                   </div>
                 </div>
 
-                <div class="desc-portfolio">
+
+              <!--  <div class="desc-portfolio">
                   <h2 class="desc-portfolio__title">Технокряк</h2>
                   <p class="desc-portfolio__text mg-zero">Веб-сайт</p>
                 </div>
@@ -222,7 +246,9 @@
                   </div>
                 </div>
                 <div class="desc-portfolio">
-                  <h2 class="desc-portfolio__title">Inspiration has no Borders</h2>
+                  <h2 class="desc-portfolio__title">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="desc-portfolio__text mg-zero">Веб-сайт</p>
                 </div>
               </a>
@@ -304,7 +330,7 @@
       </section>
     </main>
 
-    <!-- Футер -->
+    
     <footer class="wrap-footer">
       <div class="container footer-flexbox">
         <div class="footer-address">
@@ -331,7 +357,7 @@
           <ul class="list social">
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="www.instagram.com"
               >
                 <svg class="social__icon">
@@ -341,7 +367,7 @@
             </li>
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="https://twitter.com"
               >
                 <svg class="social__icon">
@@ -351,7 +377,7 @@
             </li>
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="www.facebook.com"
               >
                 <svg class="social__icon">
@@ -361,7 +387,7 @@
             </li>
             <li class="social__item">
               <a
-                class="link social__link  social-link-footer"
+                class="link social__link social-link-footer"
                 href="ru.linkedin.com"
               >
                 <svg class="social__icon">
@@ -372,7 +398,7 @@
           </ul>
         </div>
 
-        <!-- Подпишитесь на рассылку-->
+        
         <form class="form-field js-speaker-form">
           <label for="action-mail">
             <b class="call-to-action">Подпишитесь на рассылку</b>
@@ -396,5 +422,10 @@
         </form>
       </div>
     </footer>
+   
+  </body>
+</html>
+    <!--  -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

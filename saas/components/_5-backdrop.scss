@@ -7,6 +7,8 @@
   -webkit-transition: opacity $transition;
   transition: opacity $transition;
   overflow-y: scroll;
+  opacity: 1;
+  z-index: 2;
 }
 
 .backdrop.is-hidden {
