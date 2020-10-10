@@ -37,18 +37,22 @@ header {
 
 .flex-nav {
   @media screen and (max-width: 767px) {
-    display: none;
+    // display: none;
     position: absolute;
-    top: 101%;
+    // top: 101%;
     left: 0;
     width: 100%;
     text-align: center;
     z-index: 1;
     padding: 60px 0;
     background-color: #ececec;
+    transform: translateY(-250%);
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
       display: block;
+      transform: translateY(57%);
+      transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   @media screen and (min-width: 768px) {
