@@ -184,28 +184,18 @@ header {
 
 @media screen and (max-width: 767px) {
   .flex-nav {
+    display: none;
     position: absolute;
+    top: 101%;
     left: 0;
     width: 100%;
     text-align: center;
     z-index: 1;
     padding: 60px 0;
     background-color: #ececec;
-    -webkit-transform: translateY(-250%);
-            transform: translateY(-250%);
-    -webkit-transition: -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .flex-nav.is-open {
     display: block;
-    -webkit-transform: translateY(57%);
-            transform: translateY(57%);
-    -webkit-transition: -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
