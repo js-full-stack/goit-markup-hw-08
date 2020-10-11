@@ -1172,6 +1172,7 @@ header {
 
 .radio-btn .item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1282,9 +1283,17 @@ header {
   color: #212121;
 }
 
+.desc-portfolio:nth-child(2) {
+  margin-right: 24px;
+}
+
 .desc-portfolio__text {
   line-height: 1.88;
   color: #757575;
+}
+
+.desc-portfolio__title:nth-child(2) {
+  padding-right: 15px;
 }
 
 .portfolio__item {

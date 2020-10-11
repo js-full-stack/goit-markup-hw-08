@@ -22,10 +22,18 @@
     color: $header-text-color;
   }
 
+  &:nth-child(2) {
+    margin-right: 24px;
+  }
+
   &__text {
     line-height: 1.88;
     color: $primary-text-color;
   }
+}
+
+.desc-portfolio__title:nth-child(2) {
+  padding-right: 15px;
 }
 
 .portfolio__item {
